@@ -1,0 +1,72 @@
+
+// Slightly lighten a color
+// @access public
+// @param {Color} $color - color to tint
+// @param {Number} $percentage - percentage of `$color` in returned color
+// @return {Color}
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+// Slightly darken a color
+// @access public
+// @param {Color} $color - color to shade
+// @param {Number} $percentage - percentage of `$color` in returned color
+// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+/// Z-indexes map, gathering all Z layers of the application
+/// @access private
+/// @type Map
+/// @prop {String} key - Layer's name
+/// @prop {Number} value - Z value mapped to the key
+$layers: (
+  'below':  -1,
+  'base':   1,
+  'hover':  10,
+  'fixed':  20,
+  'popup':  30,
+);
+
+/// Get a z-index value from a layer name
+/// @access public
+/// @param {String} $layer - Layer’s name
+/// @return {Number}
+/// @require $z-indexes
+@function z($layer, $n: 0) {
+  @return map-get($layers, $layer) + $n;
+}
+
+@mixin container {
+  margin: 0 auto;
+  padding: 0 $gutter;
+  // @media (min-width: $sm) {
+  //   max-width: $sm - ($gutter * 2);
+  // }
+  // @media (min-width: $md) {
+  //   max-width: $md - ($gutter * 2);
+  // }
+  @media (min-width: $lg) {
+    max-width: $lg - ($gutter * 2);
+  }
+  @media (min-width: $xl) {
+    max-width: $xl - ($gutter * 2);
+  }
+}
+
+@mixin container-fluid {
+  padding: 0 $gutter;
+}
+
+@mixin row($gutter: $gutter) {
+  display: flex;
+  margin: 0 (-$gutter);
+}
+
+@mixin column($gutter: $gutter) {
+  flex: 1 0 auto;
+  min-height: 1px;
+  padding: 0 $gutter;
+}

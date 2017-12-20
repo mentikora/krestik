@@ -1,0 +1,13 @@
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__link {
+  color: $color-primary;
+  text-decoration: none;
+  transition:
+    color $duration,
+    border-color $duration;
+}

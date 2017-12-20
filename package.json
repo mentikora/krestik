@@ -1,0 +1,30 @@
+{
+  "name": "krestik8",
+  "version": "1.0.0",
+  "description": "c# Composer template for Drupal projects",
+  "main": "gulp.js",
+  "scripts": {
+    "start": "gulp clean:html && gulp clean:css && gulp watch",
+    "watch:styles": "gulp clean:css && gulp watch:styles",
+    "build": "gulp clean:html && gulp clean:css && gulp --env production",
+    "build:styles": "gulp clean:css && gulp styles --env production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/semjuel/krestik8.git"
+  },
+  "author": "sergii velykodnyi",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/semjuel/krestik8#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-environments": "^0.1.2",
+    "gulp-hb": "^6.0.2",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  }
+}

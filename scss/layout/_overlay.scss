@@ -1,0 +1,19 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: z('below');
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba($color-black, .2);
+  opacity: 0;
+
+  transition: opacity .3s;
+
+  .show-overlay & {
+    z-index: z('base', 1);
+    opacity: .4;
+  }
+}

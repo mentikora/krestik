@@ -1,0 +1,90 @@
+{
+  "title": "Крестик",
+  "description": "Вишиванка ручної роботи",
+  "phones": [
+    {"tel": "+380976763730", "operator": "097", "number": "676 3730"},
+    {"tel": "+380667401472", "operator": "066", "number": "740 1472"},
+    {"tel": "+380633581080", "operator": "063", "number": "358 1080"}
+  ],
+  "menu": [
+    {
+      "name": "Головна",
+      "link": "#",
+      "active": false,
+      "sub": false
+    },
+    {
+      "name": "Про проект",
+      "link": "#",
+      "active": false,
+      "sub": false
+    },
+    {
+      "name": "Магазин",
+      "link": "#",
+      "active": true,
+      "sub": [
+        {
+          "name": "Авторская игрушка",
+          "link": "#",
+          "active": false,
+          "sub": false
+        },
+        {
+          "name": "Вышиванки",
+          "link": "#",
+          "active": false,
+          "sub": false
+        },
+        {
+          "name": "Из бисера",
+          "link": "#",
+          "active": false,
+          "sub": false
+        },
+        {
+          "name": "Картины",
+          "link": "#",
+          "active": false,
+          "sub": false
+        },
+        {
+          "name": "Младенцам",
+          "link": "#",
+          "active": false,
+          "sub": false
+        },
+        {
+          "name": "Акции",
+          "link": "#",
+          "active": false,
+          "sub": false
+        }
+      ]
+    },
+    {
+      "name": "Вишиванки",
+      "link": "#",
+      "active": false,
+      "sub": false
+    },
+    {
+      "name": "Покупцям",
+      "link": "#",
+      "active": false,
+      "sub": false
+    },
+    {
+      "name": "Відгуки",
+      "link": "#",
+      "active": false,
+      "sub": false
+    },
+    {
+      "name": "Контакти",
+      "link": "#",
+      "active": false,
+      "sub": false
+    }
+  ]
+}

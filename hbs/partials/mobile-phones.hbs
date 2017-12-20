@@ -1,0 +1,15 @@
+<div class="mobile-phones">
+  <button class="mobile-phones__close js-mobile-phones-close" type="button">
+    <svg class="icon"><use xlink:href="icons/sprite.svg#icon-close"></use></svg>
+  </button>
+  <ul class="phones">
+    {{#each site.phones}}
+      <li class="phones__item">
+        <a class="phones__link" href="tel:{{tel}}">
+          <span class="phones__operator">{{operator}}</span>
+          {{number}}
+        </a>
+      </li>
+    {{/each}}
+  </ul>
+</div>
