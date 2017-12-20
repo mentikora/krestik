@@ -85,9 +85,53 @@
 			font-weight: 800;
 		}
 	}
+
+	&-links{
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+
+			a{
+				border: 0;
+			}
+		}
+
+		a{
+			padding: {
+				left: 2px;
+				right: 2px;
+			}
+			border-bottom: 1px solid #c93e30;
+			color: #c93e30;
+			text-decoration: none;
+
+			transition: all .2s cubic-bezier(1, 0, 0, 1);
+
+			&:hover{
+				background-color: #c93e30;
+				color: #fff;
+			}
+		}
+	}
 }
 
 .heading{
+	&-1,
+	&-2,
+	&-3,
+	&-4,
+	&-5,
+	&-6{
+		margin:{
+			top: 0;
+			bottom: 15px;
+		}
+		font: {
+			family: 'Open Sans', sans-serif;	
+			weight: 400;
+		}
+	}
 	&-1{
 		font-size: 40px;
 	}
