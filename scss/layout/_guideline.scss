@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Oswald:300&subset=cyrillic');
 
 .guideline-wrapper{
@@ -74,6 +74,7 @@
 		line-height: 25px;
 
 		&--light{
+			font-family: 'Oswald', sans-serif;	
 			font-weight: 300;
 		}
 		&--regular{
@@ -134,19 +135,19 @@
 		}
 	}
 	&-1{
-		font-size: 40px;
-	}
-	&-2{
 		font-size: 32px;
 	}
-	&-3{
+	&-2{
 		font-size: 28px;
 	}
-	&-4{
+	&-3{
 		font-size: 24px;
 	}
-	&-5{
+	&-4{
 		font-size: 20px;
+	}
+	&-5{
+		font-size: 18px;
 	}
 	&-6{
 		font-size: 16px;
@@ -226,7 +227,7 @@
 		position: relative;
 		border: 0;
 		outline: 0;
-		padding: 5px 8px; 
+		padding: 5px 15px; 
 		
 		text: {
 			align: center;
