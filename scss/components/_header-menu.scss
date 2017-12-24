@@ -3,11 +3,37 @@
 }
 .header__menu{
 	display: flex;
-	justify-content: space-around;
 
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 
 	background-color: #c93e30;
+
+	> li{
+		width: calc(100% / 7);
+		text-align: center;
+
+		> a{
+			position: relative;
+			display: block;
+			padding: 13px 0;
+			
+			line-height: 25px;
+			font-size: 18px;
+			font-family: "Oswald", sans-serif;
+			font-weight: 300;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+
+			color: $color-white;
+			text-decoration: none;
+
+			&:hover{
+				transition: .2s cubic-bezier(1, 0, 0, 1);
+				color: #c93e30;
+				background-color: #fff;
+			}
+		}
+	}
 }
