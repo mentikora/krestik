@@ -6,6 +6,7 @@
 
 @import 'layout/guideline';
 
+@import 'layout/layout';
 @import 'layout/base';
 @import 'layout/overlay';
 @import 'layout/page';
@@ -19,6 +20,7 @@
 @import 'components/search-form';
 @import 'components/footer-navigation';
 
+@import "components/header-menu";
 @import 'components/mobile-bar';
 @import 'components/mobile-menu';
 @import 'components/mobile-phones';
