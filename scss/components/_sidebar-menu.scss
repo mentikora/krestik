@@ -1,0 +1,32 @@
+.sidebar-menu-wrapper{
+
+}
+
+.sidebar-menu{
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li{
+  }
+  a{
+    padding: {
+      top: 2px;
+      bottom: 2px;
+      right: 5px;
+    }
+    font-size: $font-size;
+    line-height: $font-line-height;
+    color: $color-red;
+    text-decoration: none;
+
+    transition: all .2s cubic-bezier(1, 0, 0, 1);
+
+    &:hover{
+      padding-left: 15px;
+      background-color: $color-red;
+      color: $color-white;
+    }
+  }
+}
