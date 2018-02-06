@@ -1,0 +1,41 @@
+.button{
+  display: inline-block;
+  position: relative;
+  border: 0;
+  outline: 0;
+  padding: 5px 15px; 
+  
+  text: {
+    align: center;
+    decoration: none;
+    transform: uppercase;
+  }
+
+  
+  color: $color-white;
+
+  transition: .2s cubic-bezier(1, 0, 0, 1);
+  
+  line-height: 30px;
+  font: {
+    size: $font-size;
+    family: $font-sans;
+    weight: 400;
+  }
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+
+  /* &:hover{
+    background-color: darken($color-blue, 5%);
+  } */
+
+  &--white{
+    border: 1px solid $color-white;
+    background: none;
+  }
+
+  &--blue{
+    background: $color-blue;
+  }
+}
