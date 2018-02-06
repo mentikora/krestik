@@ -1,94 +1,96 @@
 body{
-	min-height: 100vh;
+  min-height: 100vh;
 
-	padding: {
-		top: 50px;
-		bottom: 150px;
-	}
+  padding: {
+    top: 50px;
+    bottom: 150px;
+  }
 
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	background: {
-		image: url("../images/body-bg.jpg");
-		position: 50% top;
-		size: cover;
-		repeat: no-repeat;
-		attachment: fixed;
-	}
-
-	font: {
-		size: 16px;
-		family: 'Open sans', sans-serif;
-	}
+  background: {
+    image: url("../images/body-bg.jpg");
+    position: 50% top;
+    size: cover;
+    repeat: no-repeat;
+    attachment: fixed;
+  }
 }
 
 #main-wrapper{
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-	background-color: $color-white;
-	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .12), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  background-color: $color-white;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .12), 0 2px 10px 0 rgba(0, 0, 0, .12);
+
+  @media(max-width: $screen-md-max){
+    flex-direction: column;
+  }
 }
 .main-wrapper{
+  &__sidebar,
+  &__content{
+    padding: {
+      left: $gutter;
+      right: $gutter;
+    }
+  }
 
-	&__sidebar,
-	&__content{
-		padding: {
-			left: 15px;
-			right: 15px;
-		}
-	}
+  &__sidebar{
+    @media(max-width: $screen-md-max){
+      flex: 0 0 100%;
 
-	&__sidebar{
-		flex: 0 0 30%;
-
-		background-color: #c93e30;
-	}
-	&__content{
-		flex: 0 0 70%;
-		flex-grow: 1;
-
-		background-color: #007b8a;
-	}
-
+      .good-to-know,
+      .sidebar-subscribe-wrapper{
+        display: none;
+      }
+    }
+    @media(min-width: $screen-md){
+      flex: 0 0 30%;
+    }
+  }
+  &__content{
+    flex: 0 0 70%;
+    flex-grow: 1;
+  }
 }
 
 #header{
-	background-color: rgba($color-white, .7);
-	padding: 0;
+  padding: 0;
 }
 
 #footer{
-	flex-basis: 100%;
+  flex-basis: 100%;
 
-	padding: {
-		left: 15px;
-		right: 15px;
-	}
+  padding: {
+    left: $gutter;
+    right: $gutter;
+  }
 
-	background-color: $footer-bg;
+  // background-color: $footer-bg;
 }
 
 #header,
 #main-wrapper{
-	@extend .layout-container;
+  @extend .layout-container;
 }
 
 
 .layout-container{
-	margin: {
-		left: auto;
-		right: auto;
-	}
+  margin: {
+    left: auto;
+    right: auto;
+  }
 
-	@media(max-width: 767px){
-		width: 90%;
-	}
-	@media(min-width: 768px)and(max-width: 1279px){
-		width: 80%;
-	}
-	@media(min-width: 1280px){
-		width: 1204px;
-	}
+  @media(max-width: 767px){
+    width: 90%;
+  }
+  @media(min-width: 768px)and(max-width: 1279px){
+    width: 80%;
+  }
+  @media(min-width: 1280px){
+    width: 1204px;
+  }
 }

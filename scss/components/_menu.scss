@@ -5,9 +5,5 @@
 }
 
 .menu__link {
-  color: $color-primary;
   text-decoration: none;
-  transition:
-    color $duration,
-    border-color $duration;
 }

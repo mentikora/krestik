@@ -1,33 +1,25 @@
-@import 'base/vars';
-@import 'base/helpers';
-@import 'base/normalize';
-@import 'base/typography';
-@import 'base/common';
+@import "base/variables";
+@import "base/normalize";
+@import "base/typography";
+@import "base/common";
 
-@import 'layout/guideline';
+@import "layout/guideline";
 
-@import 'layout/layout';
-@import 'layout/base';
-@import 'layout/overlay';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
+@import "layout/layout";
+@import "layout/base";
+@import "layout/overlay";
+@import "layout/page";
 
-@import 'components/form';
-@import 'components/icons';
-@import 'components/menu';
-@import 'components/phones';
-@import 'components/search-form';
-@import 'components/footer-navigation';
-
+@import "components/header-contacts";
 @import "components/header-menu";
-@import "components/mainpage-slider";
-@import 'components/mobile-bar';
-@import 'components/mobile-menu';
-@import 'components/mobile-phones';
-@import 'components/mobile-search';
+@import "components/sidebar-menu";
+@import "components/good-to-know";
+@import "components/button";
+@import "components/icons";
 
-@import 'state/show';
+@import "components/mainpage-slider";
+
+@import "state/show";
 
 
 

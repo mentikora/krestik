@@ -1,0 +1,31 @@
+.good-to-know{
+  &--horizontal{
+
+  }
+  &--vertical{
+
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &-item{
+    display: block;
+
+    text-decoration: none;
+
+    &__title{
+      margin-bottom: 5px;
+
+      color: $color-red;
+    }
+    &__text{
+      margin-top: 0;
+      
+      color: $color-black;
+    }
+  }
+}
