@@ -18,6 +18,8 @@ $mainpage-slider-height: 400px;
   }
 
   &__content{
+    opacity: 0;
+
     width: 100%;
     height: 100%;
     position: relative;
@@ -27,6 +29,12 @@ $mainpage-slider-height: 400px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    transition: .25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &.active{
+      opacity: 1;
+    }
   }
 
   .heading-1{
