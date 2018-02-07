@@ -41,6 +41,7 @@ body{
   &__sidebar{
     @media(max-width: $screen-md-max){
       flex: 0 0 100%;
+      width: 100%;
 
       .good-to-know,
       .sidebar-subscribe-wrapper{
@@ -49,6 +50,7 @@ body{
     }
     @media(min-width: $screen-md){
       flex: 0 0 30%;
+      width: 30%;
     }
 
     .sidebar-menu-wrapper,
@@ -56,9 +58,12 @@ body{
       margin-bottom: 25px;
     }
   }
+
   &__content{
+    width: 70%;
     flex: 0 0 70%;
     flex-grow: 1;
+    flex-direction: column;
   }
 }
 
