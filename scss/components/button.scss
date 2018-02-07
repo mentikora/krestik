@@ -10,29 +10,27 @@
     decoration: none;
     transform: uppercase;
   }
-
-  
-  color: $color-white;
-
-  transition: .2s cubic-bezier(1, 0, 0, 1);
-  
-  line-height: 30px;
   font: {
     size: $font-size;
     family: $font-sans;
     weight: 400;
   }
+  color: $color-white;
+  line-height: 30px;
   cursor: pointer;
   white-space: nowrap;
   user-select: none;
 
-  /* &:hover{
-    background-color: darken($color-blue, 5%);
-  } */
+  transition: .2s cubic-bezier(1, 0, 0, 1);
 
   &--white{
-    border: 1px solid $color-white;
+    box-shadow: inset 0 0 0 1px $color-white;
     background: none;
+
+    &:hover{
+      background: $color-white;
+      color: $color-red;
+    }
   }
 
   &--blue{
