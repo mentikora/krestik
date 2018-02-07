@@ -7,6 +7,10 @@ $mainpage-slider-height: 400px;
   width: 100%;
   height: $mainpage-slider-height;
   margin-bottom: 25px;
+
+  @media(max-width: $screen-md-max){
+    display: none;
+  }
 }
 
 .mainpage-slider-block{

@@ -35,5 +35,9 @@
 
   &--blue{
     background: $color-blue;
+
+    &:hover{
+      background-color: darken($color-blue, 3%);
+    }
   }
 }

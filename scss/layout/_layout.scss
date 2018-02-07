@@ -50,6 +50,11 @@ body{
     @media(min-width: $screen-md){
       flex: 0 0 30%;
     }
+
+    .sidebar-menu-wrapper,
+    .sidebar-subscribe-wrapper{
+      margin-bottom: 25px;
+    }
   }
   &__content{
     flex: 0 0 70%;
