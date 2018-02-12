@@ -60,10 +60,17 @@ body{
   }
 
   &__content{
-    width: 70%;
-    flex: 0 0 70%;
     flex-grow: 1;
     flex-direction: column;
+
+    @media(max-width: $screen-md-max){
+      width: 100%;
+      flex: 0 0 100%;
+    }
+    @media(min-width: $screen-md){
+      width: 70%;
+      flex: 0 0 70%;
+    }
   }
 }
 
