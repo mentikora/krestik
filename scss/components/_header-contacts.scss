@@ -1,3 +1,121 @@
-.header__contacts-wrapper{
-  background-color: rgba($color-white, .7);
+.header{
+
+  /* header content wrapper */
+  &__content{
+    display: flex;
+
+    height: 150px;
+
+    background-color: rgba($color-white, .7);
+  }
+
+  /* header left&right side */ 
+  &__left-side,
+  &__right-side{
+    display: inline-flex;
+    align-items: center;
+    flex: 0 0 50%;
+  }
+  &__left-side{
+    padding-left: 30px;
+  }
+  &__right-side{
+    padding-right: 30px;
+  }
+
+  /* header logo */
+  &__logo{
+    font-size: $font-size;
+  }
+
+  /* header lang and search wrapper */
+  &__search-lang-wrapper{
+    display: inline-flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+    height: 100%;
+  }
+
+  /* header lang switcher*/ 
+  &__lang{
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      display: flex;
+      justify-content: flex-end;
+    }
+    li{
+      margin: {
+        left: 5px;
+        right: 5px;
+      }
+      &.active a{
+        font-weight: bold;
+        color: $color-white;
+        background-color: $color-red;
+      }
+    }
+    a{
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+
+      font-size: $font-size;
+      color: $color-black;
+      line-height: 35px;
+      text: {
+        decoration: none;
+        transform: uppercase;
+        align: center;
+      }
+
+      transition: all .15s linear;
+
+      &:hover{
+        background-color: rgba($color-red, .5);
+        color: $color-white;
+      }
+    }
+  }
+
+  /* header search */
+  &__search{
+    margin-top: 25px;
+    input{
+
+    }
+  }
+
+  /* header contacts */
+  &__contacts{
+    padding-left: 30px;
+
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    a{
+      line-height: 24px;
+      color: $color-black;
+      font: {
+        size: 18px;
+        weight: bold;
+      }
+      text: {
+        decoration: none;
+        align: right;
+      }
+
+      transition: color .15s linear;
+
+      &:hover{
+        color: $color-red;
+      }
+    }
+  }
 }
