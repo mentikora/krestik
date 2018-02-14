@@ -35,7 +35,8 @@
         visibility: visible;
       }
       
-      > a{
+      > a,
+      > span{
         color: $color-red; 
         i {
           color: $color-black;
@@ -43,7 +44,8 @@
       }
     }
 
-    > a{
+    > a,
+    > span{
       position: relative;
       display: block;
       padding: {
@@ -63,6 +65,7 @@
       line-height: $font-line-height;
       color: $color-white;
       letter-spacing: 1px;
+      cursor: pointer;
 
       @media(max-width: $screen-md-max){
         padding: {
