@@ -84,14 +84,18 @@
   /* header search */
   &__search{
     margin-top: 25px;
-    input{
-
+    @media(max-width: $screen-sm-max){
+      display: none;
     }
   }
 
   /* header contacts */
   &__contacts{
     padding-left: 30px;
+
+    @media(max-width: $screen-md-max){
+      display: none;
+    }
 
     ul{
       margin: 0;

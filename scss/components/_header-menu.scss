@@ -1,6 +1,9 @@
 .header__menu-wrapper{
-
+  @media(max-width: $screen-md-max){
+    display: none;
+  }
 }
+
 .header__menu{
   margin: 0;
   padding: 0;
@@ -14,6 +17,7 @@
     flex-wrap: wrap;
   }
 
+  /* all categories  */
   > li{
     position: relative;
     
@@ -34,7 +38,7 @@
         opacity: 1;
         visibility: visible;
       }
-      
+
       > a,
       > span{
         color: $color-red; 
@@ -52,7 +56,7 @@
         top: 13px;
         bottom: 13px;
       }
-      
+
       text: {
         transform: uppercase;
         decoration: none;
@@ -66,6 +70,10 @@
       color: $color-white;
       letter-spacing: 1px;
       cursor: pointer;
+
+      @media(min-width: $screen-md) and (max-width: 1170px){
+        font-size: 16px;
+      }
 
       @media(max-width: $screen-md-max){
         padding: {
@@ -82,6 +90,7 @@
       }
     }
 
+    /* all subcategories */
     ul{
       height: 0;
       opacity: 0;
