@@ -1,20 +1,24 @@
 body{
   min-height: 100vh;
 
-  padding: {
-    top: 50px;
-    bottom: 150px;
-  }
-
   display: flex;
   flex-direction: column;
-
-  background: {
-    image: url("../images/body-bg.jpg");
-    position: 50% top;
-    size: cover;
-    repeat: no-repeat;
-    attachment: fixed;
+  
+  @media(max-width: $screen-xs-max){
+    background-color: $color-white;
+  }
+  @media(min-width: $screen-xs){
+    padding: {
+      top: 50px;
+      bottom: 150px;
+    }
+    background: {
+      image: url("../images/body-bg.jpg");
+      position: 50% top;
+      size: cover;
+      repeat: no-repeat;
+      attachment: fixed;
+    }  
   }
 }
 
@@ -85,8 +89,6 @@ body{
     left: $gutter;
     right: $gutter;
   }
-
-  // background-color: $footer-bg;
 }
 
 #header,
@@ -101,13 +103,13 @@ body{
     right: auto;
   }
 
-  @media(max-width: 767px){
+  @media(max-width: $screen-xs-max){
+    width: 100%;
+  }
+  @media(min-width: $screen-xs)and(max-width: $screen-lg-max){
     width: 90%;
   }
-  @media(min-width: 768px)and(max-width: 1279px){
-    width: 80%;
-  }
-  @media(min-width: 1280px){
-    width: 1204px;
+  @media(min-width: $screen-lg){
+    width: 1200px;
   }
 }

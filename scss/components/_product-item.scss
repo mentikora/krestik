@@ -20,13 +20,16 @@
 
   text-decoration: none;
   color: $color-black;
+  
 
   &:hover{
     .product-preview__title{
       color: $color-blue;
     }
-    img{
-      transform: scale(1.5);
+    @media(min-width: $screen-md){
+      img{
+        transform: scale(1.5);
+      }
     }
   }
   
@@ -41,7 +44,9 @@
     height: 300px;
     margin-bottom: 15px;
 
-    border: 1px solid rgba($color-grey, .2);
+    @media(min-width: $screen-md){
+      border: 1px solid rgba($color-grey, .2);
+    }
 
     img{
       flex-shrink: 0;
