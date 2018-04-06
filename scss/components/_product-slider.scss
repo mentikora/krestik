@@ -21,11 +21,22 @@
     font-size: 25px;
     cursor: pointer;
 
+    transition: background .15s linear;
+
+    &:hover{
+      background-color: $color-blue;
+    }
+
     &.slick-prev{
       left: 0;
     }
     &.slick-next{
       right: 0;
+    }
+
+    &.slick-disabled{
+      cursor: default;
+      background-color: rgba($color-grey, .81);
     }
   }
 }

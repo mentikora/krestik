@@ -1,4 +1,15 @@
 body{
+  /* font: {
+    family: $font-sans;
+    size: $font-size;
+  }
+  line-height: $font-line-height;
+  color: $color-black; */
+
+  @extend .text-style;
+}
+
+.text-style{
   font: {
     family: $font-sans;
     size: $font-size;
