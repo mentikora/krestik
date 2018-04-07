@@ -1,0 +1,46 @@
+.accordeon-text-wrapper{
+	margin: {
+		top: 30px;
+		bottom: 80px;
+	}
+	padding: 20px;
+
+	border: 1px solid rgba($color-grey, .2);
+
+	position: relative;
+}
+
+.accordeon-text{
+	@media(min-width: $screen-xs){
+		height: 150px;
+		overflow: hidden;	
+	}
+
+	&--open{
+		height: auto;
+		overflow: visible;
+	}
+
+	/* title */
+	&__title{
+
+	}
+
+	/* content */
+	&__content{
+		a{
+			color: $color-red;
+		}
+	}
+
+	/* button */
+	&__button{
+		position: absolute;
+		bottom: -60px;
+		right: 0px;
+
+		@media(max-width: $screen-xs){
+			display: none;
+		}
+	}
+}
