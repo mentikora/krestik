@@ -4,9 +4,16 @@
   &__content{
     display: flex;
 
-    height: 150px;
-
     background-color: rgba($color-white, .7);
+    
+    @media(max-width: $screen-xs-max){
+      flex-direction: column;
+
+      padding-bottom: 15px;
+    }
+    @media(min-width: $screen-xs){
+      height: 150px;
+    }
   }
 
   /* header left&right side */ 
@@ -14,13 +21,33 @@
   &__right-side{
     display: inline-flex;
     align-items: center;
-    flex: 0 0 50%;
+    
+    @media(max-width: $screen-xs-max){
+      flex: 0 0 100%;
+      justify-content: center;
+      text-align: center;
+    }
+
+    @media(min-width: $screen-xs){
+      flex: 0 0 50%
+    }
   }
   &__left-side{
-    padding-left: 30px;
+    @media(max-width: $screen-xs-max){
+      order: 2;
+    }
+    @media(min-width: $screen-xs){
+      padding-left: 30px;
+    }
   }
   &__right-side{
-    padding-right: 30px;
+    @media(max-width: $screen-xs-max){
+      order: 1;
+      margin-bottom: 15px;
+    }
+    @media(min-width: $screen-xs){
+      padding-right: 30px;
+    }
   }
 
   /* header logo */

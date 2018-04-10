@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{site.title}}</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header" class="header">
+    {{> header-contacts}}
+    <!-- <button class="header__menu-button">12321</button> -->
+    {{> header-menu}}
+  </header>
+
+  <!-- MAIN -->
+  <main id="main-wrapper" class="main-wrapper">
+
+    <aside class="mainpage__slider">
+      <div class="mainpage-slider-block">
+        <div>
+          <div class="mainpage-slider-block__content">
+            <h2 class="heading-1">
+              вишиванки для великих
+              <br>
+              та маленьких
+            </h2>
+            <a href="javascript:void(0);" class="button button--white">в каталог</a>
+          </div>
+          <img src="images/slider-image-1.jpg" alt="">
+        </div>
+        <div>
+          <div class="mainpage-slider-block__content">
+            <h2 class="heading-1">
+              якісна чоловіча вишиванка
+              <br> 
+              - найкращий подарунок!
+            </h2>
+            <a href="javascript:void(0);" class="button button--white">в каталог</a>
+          </div>
+          <img src="images/slider-image-2.jpg" alt="">
+        </div>
+        <div>
+          <div class="mainpage-slider-block__content">
+            <h2 class="heading-1">
+              ручна вишивка під замовлення
+              <br> 
+              від українських майстринь
+            </h2>
+            <a href="javascript:void(0);" class="button button--white">в каталог</a>
+          </div>
+          <img src="images/slider-image-3.jpg" alt="">
+        </div>
+      </div>
+      <div class="mainpage-slider-block__dots-wrapper"></div>
+    </aside>
+    
+    <!-- SIDEBAR  -->
+    <aside class="main-wrapper__sidebar">
+
+      <!-- sidebar menu wrapper -->
+      <div class="sidebar-menu-wrapper">
+        <h2 class="heading-2">Магазин</h2>
+        <nav class="sidebar-menu">
+          <ul>
+            <li><a href="javascript:void(0);">Женские вышиванки</a></li>
+            <li><a href="javascript:void(0);">Мужские вышиванки</a></li>
+            <li><a href="javascript:void(0);">Парные вышиванки</a></li>
+            <li><a href="javascript:void(0);">Украинские платья</a></li>
+            <li><a href="javascript:void(0);">Вышиванки мальчикам</a></li>
+            <li><a href="javascript:void(0);">Вышиванки девочкам</a></li>
+            <li><a href="javascript:void(0);">Вышиванки младенцам</a></li>
+            <li><a href="javascript:void(0);">Свадебные рушныки</a></li>
+            <li><a href="javascript:void(0);">Текстиль с вышивкой</a></li>
+            <li><a href="javascript:void(0);">Украинские венки</a></li>
+            <li><a href="javascript:void(0);">Украинские бренды</a></li>
+            <li><a href="javascript:void(0);">Ручная роспись</a></li>
+            <li><a href="javascript:void(0);">Верхняя одежда</a></li>
+            <li><a href="javascript:void(0);">Вязаные вещи</a></li>
+            <li><a href="javascript:void(0);">Авторская игрушка</a></li>
+            <li><a href="javascript:void(0);">Из бисера</a></li>
+            <li><a href="javascript:void(0);">Картины</a></li>
+            <li><a href="javascript:void(0);">Книги</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </aside>
+
+    <aside class="main-wrapper__content">
+      
+      <!-- breadcrumbs -->
+      {{> breadcrumbs}}
+      
+      <!-- pagination -->
+      {{> pagination}}
+      
+    </aside>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+
+      <!-- footer logo -->
+      <div class="footer__logo-wrapper">
+        <a href="footer__logo">
+          <img src="../images/logo.png" alt="">
+        </a>
+      </div>
+    </footer>
+  </main>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/mainpage-slider.js"></script>
+  <script src="js/accordeon-text.js"></script>
+  <script src="js/product-preview-slider.js"></script>
+</body>
+</html>

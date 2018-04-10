@@ -1,0 +1,51 @@
+.pagination-wrapper{
+	padding: {
+		top: 25px;
+		bottom: 25px;
+	}
+}
+
+.pagination{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	text-align: center;
+
+	&__item{
+		display: inline-block;
+		font-family: $font-oswald;
+
+		& + .pagination__item {
+			margin-left: 15px;
+		}
+
+		&--current{
+			font-size: 24px;
+			cursor: default;
+		}
+	}
+
+	&__link,
+	&__current{
+		text-decoration: none;
+
+		&::before{
+		  content: '0';
+		}
+		&::after{
+		  content: '.';
+		}
+	}
+
+	&__link{
+		color: $color-red;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	&__current{
+		color: $color-blue;
+	}
+}
