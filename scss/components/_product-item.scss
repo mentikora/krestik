@@ -13,6 +13,28 @@
   }
 }
 
+/* products preview page */
+.product-items-preview-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px -20px;
+
+  .product-item-preview-cell{
+
+    padding: 20px;
+    
+    @media(max-width: $screen-xs){
+      flex: 0 0 100%;
+    }
+    @media(min-width: $screen-xs) and (max-width: $screen-sm-max){
+      flex: 0 0 50%;
+    }
+    @media(min-width: $screen-sm){
+      flex: 0 0 33%;
+    }
+  }
+}
+
 /* product preview block*/
 .product-preview{
   display: block;
