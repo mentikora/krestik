@@ -412,19 +412,20 @@ template {
 [hidden] {
   display: none; }
 
-body {
-  /* font: {
-    family: $font-sans;
-    size: $font-size;
-  }
-  line-height: $font-line-height;
-  color: $color-black; */ }
-
 .text-style, body, .highlighted-item {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 25px;
   color: #111517; }
+
+.text-link-style, .product-view__details-wrapper a {
+  color: #c93e30;
+  text-decoration: none;
+  -webkit-transition: color .15s linear;
+  transition: color .15s linear; }
+  .text-link-style:hover, .product-view__details-wrapper a:hover {
+    text-decoration: underline;
+    color: #007b8a; }
 
 .heading-1, .heading-2, .heading-3, .heading-4, .g_table caption, .heading-5, .heading-6 {
   margin-top: 0;
@@ -1498,6 +1499,57 @@ body {
       top: 0;
       left: 0;
       z-index: 2; }
+
+.product-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Slider */
+  /* Main-info */
+  /* name */
+  /* price */
+  /* feedback */
+  /* buy button */
+  /* details-wrapper */
+  /* Secondary info */ }
+  .product-view-slider, .product-view-main-info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; }
+  .product-view__name {
+    text-transform: uppercase; }
+  .product-view__price {
+    margin-bottom: 25px;
+    font-size: 20px; }
+    .product-view__price--full {
+      text-decoration: line-through; }
+    .product-view__price--discount {
+      position: relative;
+      padding-left: 5px;
+      padding-right: 5px;
+      color: #c93e30; }
+      .product-view__price--discount::before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        border-left: 1px solid #BBBDBF;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2; }
+  .product-view__buy-button-wrapper {
+    margin-bottom: 25px; }
+    .product-view__buy-button-wrapper .button {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 100%; }
+  .product-view__details-wrapper p {
+    margin: 0;
+    color: #111517; }
+  .product-view__details-wrapper label {
+    font-weight: 600; }
 
 .socials-block {
   margin: 0;
