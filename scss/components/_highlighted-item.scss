@@ -1,0 +1,54 @@
+.highlighted-items-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+.highlighted-item{
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	flex-direction: column;
+	
+	padding: 15px;
+
+	border: 1px solid rgba($color-grey, .2);
+
+	@extend .text-style;
+
+	text-decoration: none;
+	
+	@media(max-width: $screen-xs){
+		flex: 0 0 100%;
+		margin-bottom: 20px;
+	}
+	@media(min-width: $screen-xs-max) and (max-width: $screen-sm){
+		flex: 0 0 calc(50% - 30px);
+		margin: {
+			left: 15px;
+			right: 15px;
+			bottom: 30px;
+		}
+	}
+	@media(min-width: $screen-sm){
+		flex: 0 0 calc(100% / 3 - 30px);
+		margin: {
+			left: 15px;
+			right: 15px;
+		}
+	}
+
+	&:hover .highlighted-item__title{
+		color: $color-blue;
+	}
+	
+	/* title */
+	&__title{
+		color: $color-red;
+
+		transition: color .15s linear;
+	}
+
+	/* text */
+	&__text{
+
+	}
+}

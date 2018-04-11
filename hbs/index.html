@@ -15,6 +15,7 @@
   <!-- HEADER -->
   <header id="header" class="header">
     {{> header-contacts}}
+    <!-- <button class="header__menu-button">12321</button> -->
     {{> header-menu}}
   </header>
 
@@ -152,73 +153,66 @@
         <div class="product-slider">
           
           <div>
-            <a class="product-preview" href="javascript:void(0);">
-              <div class="product-preview__image-wrapper">
-                <img src="images/test-product.jpg" alt="product item preview alt-name">
-              </div>
-              <h3 class="product-preview__title heading-4">
-                Лосины черные "Классика"
-              </h3>
-              <div class="product-preview__price-wrapper">
-                <span class="product-preview__price--full">120000 грн</span>
-                <span class="product-preview__price--discount">100000 грн</span>
-              </div>
-            </a>
+            {{> product-item-preview}}
           </div>
           <div>
-            <a class="product-preview" href="javascript:void(0);">
-              <div class="product-preview__image-wrapper">
-                <img src="images/test-product.jpg" alt="product item preview alt-name">
-              </div>
-              <h3 class="product-preview__title heading-4">
-                Лосины бежевые "Классика"
-              </h3>
-              <div class="product-preview__price-wrapper">
-                <span class="product-preview__price--current">1200 грн</span>
-              </div>
-            </a>
+            {{> product-item-preview}}
           </div>
           <div>
-            <a class="product-preview" href="javascript:void(0);">
-              <div class="product-preview__image-wrapper">
-                <img src="images/test-product.jpg" alt="product item preview alt-name">
-              </div>
-              <h3 class="product-preview__title heading-4">
-                Трикотажное платье с люрексом
-              </h3>
-              <div class="product-preview__price-wrapper">
-                <span class="product-preview__price--current">1200 грн</span>
-              </div>
-            </a>
+            {{> product-item-preview}}
           </div>
           <div>
-            <a class="product-preview" href="javascript:void(0);">
-              <div class="product-preview__image-wrapper">
-                <img src="images/test-product.jpg" alt="product item preview alt-name">
-              </div>
-              <h3 class="product-preview__title heading-4">
-                Трикотажная кофта с небольшим декольте
-              </h3>
-              <div class="product-preview__price-wrapper">
-                <span class="product-preview__price--current">1200 грн</span>
-              </div>
-            </a>
+            {{> product-item-preview}}
           </div>
           <div>
-            <a class="product-preview" href="javascript:void(0);">
-              <div class="product-preview__image-wrapper">
-                <img src="images/test-product.jpg" alt="product item preview alt-name">
-              </div>
-              <h3 class="product-preview__title heading-4">
-                Трикотажная кофта с небольшим декольте
-              </h3>
-              <div class="product-preview__price-wrapper">
-                <span class="product-preview__price--current">1200 грн</span>
-              </div>
-            </a>
+            {{> product-item-preview}}
           </div>
 
         </div>
+      </div>
+
+      <div class="highlighted-items-wrapper">
+        <a href="javascript:void(0);" class="highlighted-item">
+          <h3 class="highlighted-item__title heading-2">
+            Стиль вышиванок Бохо
+          </h3>
+          <p class="highlighted-item__text">
+            Модные тенденции для самых избирательных по супер цене!
+          </p>
+        </a>
+        <a href="javascript:void(0);" class="highlighted-item">
+          <h3 class="highlighted-item__title heading-2">
+            Борщевские вышиванки
+          </h3>
+          <p class="highlighted-item__text">
+            Старинные орнаменты оживают на современных сорочках!
+          </p>
+        </a>
+        <a href="javascript:void(0);" class="highlighted-item">
+          <h3 class="highlighted-item__title heading-2">
+            Нежные вышиванки
+          </h3>
+          <p class="highlighted-item__text">
+            Белым по белому.
+            Магия белой вышивки.
+          </p>
+        </a>
+      </div>
+
+      <div class="accordeon-text-wrapper">
+        <div class="accordeon-text">
+          <h2 class="accordeon-text__title heading-2">
+            Купить вышиванку ручной работы или заказать вышивку
+          </h2>
+          <p class="accordeon-text__content">
+            Интернет-магазин «Крестик» - это замечательный шанс для наших клиентов купить вышиванку оригинальную, в традиционном стиле или заказать вышивку, способную подчеркнуть индивидуальность и тонкий вкус ее владельца.
+            <br><br>
+            Сегодня многие из <a href="javascript:void(0);">нас</a> остро чувствуют себя украинцами, ассоциируют себя с духом и традициями нашей земли. Вышитая сорочка, рубашка-вышиванка издавна является гордостью и символом украинской культуры, воплощением трудолюбивого и солнечного нрава нашего народа. Создавая свои вышитые работы в столь непростое время, и даже в условиях войны, наши мастерицы не просто стремяться укрепить связь между поколениями, сделать свой посильный вклад в историю, но и своими руками творят одежду, станущую для Вас оберегом, талисманом и просто надежным союзником по жизни.
+          </p>
+        </div>
+        <button class="accordeon-text__button button button--blue">
+          далее...
+        </button>
       </div>
 
       <!-- <div class="product-slider-block">
@@ -307,6 +301,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="js/mainpage-slider.js"></script>
+  <script src="js/accordeon-text.js"></script>
   <script src="js/product-preview-slider.js"></script>
 </body>
 </html>

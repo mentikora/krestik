@@ -1,6 +1,9 @@
 .header__menu-wrapper{
-
+  @media(max-width: $screen-md-max){
+    display: none;
+  }
 }
+
 .header__menu{
   margin: 0;
   padding: 0;
@@ -10,18 +13,50 @@
 
   background-color: $color-red;
 
-  > li{
-    width: calc(100% / 7);
-    text-align: center;
+  @media(max-width: $screen-md-max){
+    flex-wrap: wrap;
+  }
 
-    > a{
+  /* all categories  */
+  > li{
+    position: relative;
+    
+    @media(max-width: $screen-md-max){
+      width: 100%;
+    }
+    @media(min-width: $screen-md){
+      width: calc(100% / 7);
+
+      text-align: center;
+    }
+
+    &:hover{ 
+      background-color: $color-white;
+
+      ul {
+        height: auto;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      > a,
+      > span{
+        color: $color-red; 
+        i {
+          color: $color-black;
+        }
+      }
+    }
+
+    > a,
+    > span{
       position: relative;
       display: block;
       padding: {
         top: 13px;
         bottom: 13px;
       }
-      
+
       text: {
         transform: uppercase;
         decoration: none;
@@ -34,12 +69,73 @@
       line-height: $font-line-height;
       color: $color-white;
       letter-spacing: 1px;
+      cursor: pointer;
 
-      &:hover{
-        transition: .2s cubic-bezier(1, 0, 0, 1);
-        color: $color-red;
-        background-color: $color-white;
+      @media(min-width: $screen-md) and (max-width: 1170px){
+        font-size: 16px;
       }
+
+      @media(max-width: $screen-md-max){
+        padding: {
+          left: 15px;
+          right: 15px;
+        }
+      }
+
+      i{
+        display: inline-block;
+        transform: scale(.5) rotate(90deg);
+
+        transition: .15s linear;
+      }
+    }
+
+    /* all subcategories */
+    ul{
+      height: 0;
+      opacity: 0;
+      visibility: hidden;
+
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      text-align: left;
+
+      background-color: $color-white;
+
+      @media(min-width: $screen-md){
+        position: absolute;
+        top: 51px; left: 0;
+        z-index: 10;
+      }
+
+      a{
+        display: block;
+        padding: {
+          top: 8px;
+          bottom: 8px;
+          left: 20px;
+          right: 20px;
+        }
+
+        white-space: nowrap;
+        color: $color-red;
+        font-size: $font-size;
+        text-decoration: none;
+
+        &:hover{
+          background-color: $color-red;
+          color: $color-white;
+        }
+      }
+
+    }
+  }
+
+  &-button{
+    @media(min-width: $screen-md){
+      display: none;
     }
   }
 }
