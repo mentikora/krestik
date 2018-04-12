@@ -1,20 +1,34 @@
 .product-view{
+	width: 100%;
+
 	display: flex;
 	flex-wrap: wrap;
 
+	@media(max-width: $screen-sm-max){
+		flex-direction: column;
+	}
+
 	&-slider,
 	&-main-info{
-		flex: 0 0 50%;
+		overflow: hidden;
+
+		@media(min-width: $screen-sm){
+			flex: 0 0 50%;
+		}
 	}
 
 	/* Slider */
 	&-slider{
-
+		@media(min-width: $screen-sm){
+			padding-right: 10px;
+		}
 	}
 
 	/* Main-info */
 	&-main-info{
-
+		@media(min-width: $screen-sm){
+			padding-left: 10px;
+		}
 	}
 	
 	/* name */ 
@@ -97,7 +111,8 @@
 
 	/* Secondary info */
 	&-secondary-info{
-
+		width: 100%;
+		margin-top: 40px;
 	}
 
 
