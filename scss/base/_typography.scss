@@ -1,11 +1,4 @@
 body{
-  /* font: {
-    family: $font-sans;
-    size: $font-size;
-  }
-  line-height: $font-line-height;
-  color: $color-black; */
-
   @extend .text-style;
 }
 
@@ -16,6 +9,18 @@ body{
   }
   line-height: $font-line-height;
   color: $color-black;
+}
+
+.text-link-style{
+  color: $color-red;
+  text-decoration: none;
+
+  transition: color .15s linear;
+
+  &:hover{
+    text-decoration: underline;
+    color: $color-blue;
+  }
 }
 
 .heading{

@@ -6,37 +6,45 @@
   }
 
   .slick-arrow{
-    border: 0;
-    outline: 0;
-
-    position: absolute;
     top: 130px;
-    z-index: 2;
-
-    width: 40px;
-    height: 40px;
-    background-color: rgba($color-blue, .81);
-
-    color: $color-white;
-    font-size: 25px;
-    cursor: pointer;
-
-    transition: background .15s linear;
-
-    &:hover{
-      background-color: $color-blue;
-    }
-
-    &.slick-prev{
-      left: 0;
-    }
-    &.slick-next{
-      right: 0;
-    }
-
-    &.slick-disabled{
-      cursor: default;
-      background-color: rgba($color-grey, .81);
-    }
   }
 }
+
+.slick-slide {
+  outline: 0;
+}
+
+.slick-arrow{
+  border: 0;
+  outline: 0;
+
+  position: absolute;
+  z-index: 2;
+
+  width: 40px;
+  height: 40px;
+  background-color: rgba($color-blue, .81);
+
+  color: $color-white;
+  font-size: 25px;
+  cursor: pointer;
+
+  transition: background .15s linear;
+
+  &:hover{
+    background-color: $color-blue;
+  }
+
+  &.slick-prev{
+    left: 0;
+  }
+  &.slick-next{
+    right: 0;
+  }
+
+  &.slick-disabled{
+    cursor: default;
+    background-color: rgba($color-grey, .81);
+  }
+}
+
